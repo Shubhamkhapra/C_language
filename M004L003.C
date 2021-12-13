@@ -1,0 +1,24 @@
+
+//Write a program enter three subject marks and calculate aggregate marks and percentage.
+//Author : Shubham Khapra	 Date:- Oct5,2021
+#include<stdio.h>
+#include<conio.h>
+void main()
+	{
+		 int hindi,english,math, aggregate_marks;
+		 float percentage;
+		 clrscr();
+		 printf("Enter the student hindi marks:- ");
+		 scanf("%d",&hindi);
+		 printf("\nEnter the student english marks:- ");
+		 scanf("%d",&english);
+		 printf("\nEnter the student math marks:- ");
+		 scanf("%d",&math);
+		 //Formula for calculate aggregate marks
+		 aggregate_marks=hindi+english+math;
+		 printf("\nStudent Aggregate Marks is :- %d ",aggregate_marks);
+		 //Formula for  claculate percentage
+		 percentage= aggregate_marks/3.0;
+		 printf("\nStudent Aggregate Marks is :- %d  And percentage of student is:-  %.2f ",aggregate_marks,percentage);
+		 getch();
+	}

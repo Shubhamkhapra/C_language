@@ -1,0 +1,19 @@
+/*Write a program to check even or odd no.
+	Author:- Shubham Date:- Oct 11,2021 */
+#include<conio.h>
+void main()
+	{
+		int num;
+		clrscr();
+		printf("Enter a number ");
+		scanf("%d",&num);
+			if(num%2!=0)
+				{
+					printf("\nEnter no is %d are Odd ",num);
+				}
+			else
+				{
+					printf("\nEnter no is %d are Even",num);
+				}
+		getch();
+	}

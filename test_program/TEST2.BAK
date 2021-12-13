@@ -1,0 +1,9 @@
+/* expoler page no 88 6 program */
+#include<stdio.h>
+void main()
+  {
+    int i=1,j=1;
+    for(;j;printf("%d %d \n",i,j))
+      j=i++<=5;
+      
+  }

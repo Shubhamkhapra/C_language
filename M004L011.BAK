@@ -1,0 +1,17 @@
+/*Write a program to find absolute value.
+	Author:- Shubham Date:- Oct 11,2021 */
+#include<conio.h>
+void main()
+	{
+		int num,abs;
+		clrscr();
+		printf("Enter a number ");
+		scanf("%d",&num);
+		absolute_value=num;
+			if(absolute_value<0)
+				{
+				  absolute_value=absolute_value*-1;
+				}
+		printf("\nEnter No this : %d  Are absolute value is : %d ",num,absolute_value);
+		getch();
+	}

@@ -1,0 +1,23 @@
+/* Write a program to check Leap year or not using or logical operator.
+	Author:- Shubham Date:- Oct 12,2021 */
+#include<conio.h>
+void main()
+	{
+		int year;
+		clrscr();
+		printf("Enter the Year ");
+		scanf("%d",&year);
+			if(year%400==0 || (year%4==0 && year%100 !=0))
+				{
+					printf("\nEnter year is %d this are Leap Year",year);
+				}
+			else
+				{
+					printf("\nEnter year is %d this are  Not Leap Year",year);
+				}
+		getch();
+	}
+
+
+
+

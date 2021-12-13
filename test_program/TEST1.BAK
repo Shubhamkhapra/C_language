@@ -1,0 +1,23 @@
+#include<stdio.h>
+//int pri(int,int);
+//int printit(float,int);
+int  main()
+	{
+		float a=3.14;
+		int i=99;
+		// clrscr();
+		pri(i,a);
+		printit(a,i);
+		// getch();
+	}
+pri(i,a)
+	{
+		printf("i=%d , a= %d\n ",i,a);
+		printf("a=%f , i= %d \n",a,i);
+	}
+printit(a,i)
+float a;
+	{
+		printf("a=%f , i= %d \n",a,i);
+		printf("i=%d , a= %f \n",i,a);
+	}

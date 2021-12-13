@@ -1,0 +1,29 @@
+/*Write a program to enter four digit no check this no is palindrome or not.
+	Author:- Shubham Date:- Oct 11,2021 */
+#include<conio.h>
+void main()
+	{
+		long int num, rev, original, d1,d2,d3,d4;
+		clrscr();
+		printf("Enter a Four digit No:- ");
+		scanf("%ld",&num);
+		original=num;
+		d1=num/1000;
+		num=num%1000;
+		d2=num/100;
+		num=num%100;
+		d3=num/10;
+		num=num%10;
+		d4=num;
+		rev=d4*1000+d3*100+d2*10+d1;
+			if(original==rev)
+				{
+					printf("\nEnter no is :- %ld Are palindrome :- %ld ",original,rev);
+				}
+			else
+				{
+					printf("\nEnter no is :- %ld Are Not palindrome :- %ld ",original,rev);
+				}
+
+		getch();
+	}

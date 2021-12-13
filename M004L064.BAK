@@ -1,0 +1,30 @@
+/*Write a program  create a function enter any no and calculate factorial.
+  Author:- Shubham Date:- Nov 9 ,2021 */
+long int facts(int);
+#include<stdio.h>
+#include<conio.h>
+int main()
+		{
+				int  num;
+				long int factorial;
+				clrscr();
+				printf("Enter the Number:- ");
+				scanf("%d",&num);
+				factorial=facts(num);
+				printf("Enter Value is :- %d , Factorial  value is  :- %ld  \n", num,factorial);
+				getch();
+				return 0;
+		}
+long int facts(int num)
+		{
+				long int i,fact=1;
+
+				i=1;
+				while(i<=num)
+						{
+						fact = fact * i;
+						i +=1;
+						}
+				return fact;
+
+		}

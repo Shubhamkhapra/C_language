@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+	{
+		int i,size,max,max2,position;
+		int a[5],temp[5-1];
+
+		printf("Enter Size ofarray \n");
+		scanf("%d",&size);
+
+		printf("\n Enter number in array");
+		for(i=0;i<size;i++)
+			{
+				scanf("%d",&a[i]);
+			}
+		max=a[0];
+		position=0;
+
+		for(i=0;i<size;i++)
+			{
+				if(a[i]>max)
+					{
+						max=a[i];
+						position=i;
+					}
+			}
+		for(i=0;i<size;i++)
+			{
+				if(i<position)
+					{
+						temp[i]=a[i];
+					}
+				if(i>=position)
+				{
+					temp[i]=a[i+1];
+				}
+			}
+			max2=temp[0];
+			for(i=0;i<size;i++)
+				{
+					if(temp[i]>max2)
+					{
+					 max2=temp[i];
+					}
+				}
+			printf("\n the first largest number is %d  ",max);
+			printf("\n the second largest number is %d  ",max2);
+			getch();
+	 return 0;
+	}

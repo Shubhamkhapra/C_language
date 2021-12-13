@@ -1,0 +1,28 @@
+/*Write a program to print all nth number check  all prime number.
+	Author:- Shubham Date:- Oct 19,2021 */
+#include<conio.h>
+int main()
+	{
+		int n,num=0, i,j,start;
+		clrscr();
+		printf("Enter the number to find prime numbers :- ");
+		scanf("%d",&n);
+		for(i=0;i<=n;i++)
+			{
+				for(j=2;j<=num;j++)
+					{
+						if(num%j==0)
+							{
+								break;
+							}
+					}
+				printf("i value %d \n ",j);
+				printf("j value %d \n ",i);
+				if(j==num)
+					{
+						printf("prime Number is :- %d \n",j);
+					}
+				num ++;
+			}
+		 getch();
+	}

@@ -1,0 +1,20 @@
+/*Write a program to find out 1 to 500 all armstrong number.
+  Author:- Shubham Date:- Oct 19,2021 */
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+	{
+		int armstrong=0, num, rem,original;
+		clrscr();
+		num=1;
+		while(num<=500)
+			{
+				original=num;
+				rem=original%10;
+				armstrong =armstrong + rem*rem*rem;
+				printf("number %d armstrong %d ",num,armstrong);
+				original /=10;
+			}
+		getch();
+	}

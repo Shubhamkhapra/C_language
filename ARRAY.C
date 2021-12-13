@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+
+void	main()
+	{
+		int i,size,a[5],j;
+		clrscr();
+		printf("Enter Size ofarray \n");
+		scanf("%d",&size);
+
+		for(i=0;i<size;i++)
+			{
+				scanf("%d",&a[i]);
+			}
+		for(j=0;j<size;j++)
+			{
+				printf("\nAraay Values is %d ",a[j]);
+			}
+		getch();
+
+		}

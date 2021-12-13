@@ -1,0 +1,29 @@
+/* Write a program to print this pattern
+    1
+   2 3
+  3 4 5
+ 4 5 6 7
+
+ Author:- Shubham Date:- Oct 28,2021
+  */
+#include<stdio.h>
+int main()
+	{
+		int i,j,n=1,num;
+		printf("Enter the  num :- ");
+		scanf("%d",&num);
+    for(i=1;i<=num;i++)
+			{
+				for(j=1;j<=num-i;j++)
+					{
+						printf("  ");
+					}
+          for(j=1;j<=i;++j)
+            {
+              printf("%4d",n);
+              ++n;
+            }
+        printf("\n");
+      }
+  }
+
